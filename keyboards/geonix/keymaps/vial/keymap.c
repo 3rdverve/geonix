@@ -14,7 +14,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include QMK_KEYBOARD_H
-#include "../../../lib/rdr_lib/rdr_common.h"
 
 enum layer_number {
     _00, _01, _02, _03, _04, _05, _06,
