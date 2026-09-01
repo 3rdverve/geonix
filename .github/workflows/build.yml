@@ -1,1 +1,10 @@
-test
+name: Build QMK firmware
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  build:
+    name: 'QMK Userspace Build'
+    uses: qmk/.github/.github/workflows/qmk_userspace_build.yml@main
+    with:
+      qmk_repo: "vial-kb/vial-qmk"
+      qmk_ref: "vial"
+      preparation_command: "ln -s $GITHUB_WORKSPACE/keyboards/geonix $GITHUB_WORKSPACE/qmk_firmware/keyboards/geonix"
