@@ -7,4 +7,3 @@ jobs:
     with:
       qmk_repo: "vial-kb/vial-qmk"
       qmk_ref: "vial"
-      preparation_command: "ln -sf $GITHUB_WORKSPACE/keyboards/geonix $GITHUB_WORKSPACE/qmk_firmware/keyboards/geonix || true"
